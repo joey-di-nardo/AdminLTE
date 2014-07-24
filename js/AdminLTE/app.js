@@ -587,7 +587,7 @@ $(window).load(function() {
                 btn.children(".fa-angle-left").first().removeClass("fa-angle-left").addClass("fa-angle-down");
             }
             //Slide open or close the menu on link click
-            btn.click(function(e) {
+            $(this).on("click",btn,function(e) {
                 e.preventDefault();
                 if (isActive) {
                     //Slide up to close menu
